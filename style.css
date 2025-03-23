@@ -233,3 +233,91 @@ footer{
 
 }
 
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.5rem;
+        padding: 15px 0;
+    }
+
+    .bodyphone {
+        margin: 5px;
+        padding: 5px;
+        border-width: 3px;
+    }
+
+    #game, #ScoreBoard {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .arena, .board {
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 15px !important;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-buttonA, 
+    .image-buttonB, 
+    .image-buttonC {
+        width: 30%;
+        padding: 8px;
+        border-radius: 8px !important;
+    }
+
+    .iconbn1 {
+        width: 60%;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+    .button-container {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .image-buttonA, 
+    .image-buttonB, 
+    .image-buttonC {
+        width: 28%;
+        padding: 5px;
+    }
+
+    .iconbn1 {
+        width: 70%;
+    }
+
+    #ScoreBoard h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Add these to your existing styles */
+.button-container, .button-container2 {
+    flex-wrap: wrap;
+}
+
+.image-buttonA, .image-buttonB, .image-buttonC {
+    min-width: 80px; /* Ensure minimum tap target size */
+}
+
+#ScoreBoard h1 {
+    font-size: 2rem;
+    transition: font-size 0.3s;
+}
