@@ -1,0 +1,235 @@
+*{  
+    margin: 0;  
+    padding: 0;  
+   }  
+
+   body{
+    align-items: center;
+    justify-content: center;
+    background-color: #ccd5d7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('images/download.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+   }
+
+   .bodyphone{
+    margin: 10px;
+    padding: 5px;
+    border: solid rgb(233, 226, 226) 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    background-color: #db7632cf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    padding: 10px;
+   }
+
+.header {
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #e6f7d4f0; /* Background color */
+    padding: 20px 0; /* Padding for spacing */
+    z-index: 1000; /* Ensure it stays above other content */
+    text-align: center; /* Center the text */
+    box-shadow: rgba(236, 238, 236, 0.17) 0px -23px 25px 0px inset, rgba(8, 214, 233, 0.15) 0px -36px 30px 0px inset, rgba(12, 223, 83, 0.1) 0px -79px 40px 0px inset, rgba(208, 19, 229, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.header-title {
+    font-size: 2rem; /* Font size for header title */
+    color: #000000; /* Text color */
+    
+}
+
+
+.arena{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 100%;
+    height: auto;
+    background-color: #ffffffe7;
+    text-align: center;
+    border: none;
+}
+
+.icon{
+    width: 40%;
+    height: auto;
+    margin: 10px;
+}
+
+#game{
+    display: flex;           /* Use Flexbox for the parent */
+    justify-content: space-around; /* Distribute space between items */
+    align-items: center;     /* Center items vertically (if heights differ) */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.177);
+    gap: 20px;
+    border-radius: 20px;
+}
+#com_hand{
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#hum_hand{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#ScoreBoard{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    gap: 1px;
+    border-radius: 20px;
+}
+
+.board{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff2b;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#com_board{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#hum_board{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border: solid rgb(233, 226, 226) 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    background-color: #103f65cf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    padding: 10px;
+    gap: 2px;
+}
+
+
+.image-buttonA{
+    background-color: #ffffff28;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.image-buttonB{
+    background-color: #ffffff28;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.image-buttonC{
+    background-color: #ffffff28;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.iconbn{
+    width: 40%;
+    height: auto;
+    
+    padding: 3px;
+}
+
+.iconbn1{
+    width: 45%;
+    height: auto;
+    padding: px;
+}
+.button-container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border: solid rgb(233, 226, 226) 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    background-color: #103f65cf;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    gap: 2px;
+}
+
+.image-buttonE{
+    background-color: #95d6a1b0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image-buttonF{
+    background-color: #e48a8a;
+    display: flex;
+    border: black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer{
+
+    background-color: #282c34; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center; /* Center the footer text */
+    padding: 10px 0; /* Footer padding */
+    position: relative; /* Keep footer position relative */
+    bottom: 0; /* Align footer at the bottom */
+    width: 100%; /* Full width footer */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+
+}
+
